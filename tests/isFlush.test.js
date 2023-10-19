@@ -7,11 +7,11 @@ test('check that isFlush returns truthy if flush', () => {
     let hand = new Hand(suit + '2', suit + '6', suit + '4', suit + '8', suit + '7');
     expect(CompareHands.isFlush(hand)).toBeTruthy();
   }
-});
+}); xxwxw
 
 test('check that isFlush returns falsey if not flush', () => {
   let hand = new Hand('♣2', '♣6', '♥4', '♣8', '♣7');
-  expect(CompareHands.isFlush(hand)).toBeFalsy();
+  expect(CompareHands.isFlush(hand)).toBeTruthy(); // wrong should be: toBeFalsy
 });
 
 test('check that isFlush returns a higher score for a stronger hand (if two hands but with flush)', () => {
