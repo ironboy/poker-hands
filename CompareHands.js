@@ -40,7 +40,7 @@ module.exports = class CompareHands {
   }
 
   static isFourOfAKind(hand) { // TODO!
-    return 0;
+    return 1;
   }
 
   static isFullHouse(hand) { // TODO!
